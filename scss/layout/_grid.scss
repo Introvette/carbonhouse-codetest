@@ -4,21 +4,24 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap: 40px;
+    max-width: 95%;
+    margin-inline: auto;
 
     @media (min-width: 900px) {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
 
-    &__social, &__directions {
+    &__left, &__right {
         padding: 40px;
     }
 
-    &__social {
+    &__left {
         background-color: rgb(0, 115, 255);
 
     }
 
-    &__directions {
+    &__right {
         background-color: rgb(0, 115, 255);
     }
 }
