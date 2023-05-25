@@ -1,0 +1,23 @@
+.nav-container .sticky-banner {
+  background-color: black;
+  color: white;
+}
+.nav-container .sticky-banner .container .nav-header nav[role=navigation] ul.sf-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-container .sticky-banner .container .nav-header nav[role=navigation] ul.sf-menu li {
+  display: inline;
+}
+.nav-container .sticky-banner .container .nav-header nav[role=navigation] ul.sf-menu li a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-container .sticky-banner .container .nav-header nav[role=navigation] ul.sf-menu li a:hover {
+  background-color: #767676;
+}
+
+/*# sourceMappingURL=output.css.map */
