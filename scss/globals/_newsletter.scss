@@ -1,5 +1,4 @@
 .newsletter-bg {
-    background-image: url("assets/img/handsup.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -39,4 +38,15 @@
     padding: 9px 35px 9px 35px;
     border-radius: 10px;
     border-color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .newsletter-bg {
+    height: auto;
+  }
+
+  .newsletter-container {
+    width: 90%;
+  }
 }
