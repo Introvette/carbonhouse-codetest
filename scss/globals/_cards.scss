@@ -26,6 +26,40 @@
     margin-bottom: 30px;
   }
 
+.date-bar{
+  background-color: black;
+  color: var(--theme-color);
+  display: flex;
+  flex-direction: flex-start;
+  height: 40%;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.date-bar p {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.day-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -35px;
+}
+
+.day-bar {
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  width: 40%;
+  border-radius: 20px 0px 0px 70px;
+}
+
 
   @media screen and (max-width: 768px) {
     .cards {
