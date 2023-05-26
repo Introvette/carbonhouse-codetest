@@ -1,0 +1,21 @@
+.newsletter-bg {
+    background-image: url("assets/img/handsup.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .newsletter-bg div {
+    text-align: center;
+  }
+
+  .newsletter-bg p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
