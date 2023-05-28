@@ -7,17 +7,17 @@
   align-items: center;
   height: 400px;
   margin-bottom: 50px;
+}
 
-  div {
-    text-align: center;
-    padding: 9px 35px 15px 35px;
-  }
+.newsletter-bg div {
+  text-align: center;
+  padding: 9px 35px 15px 35px;
+}
 
-  p {
-    color: white;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+.newsletter-bg p {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .newsletter-text-container {
@@ -25,32 +25,38 @@
   width: 35%;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  .newsletter-content {
-    h1 {
-      text-shadow: rgba(0, 0, 0, 0.5);
-      color: white;
-      font-size: 30px;
-    }
-
-    button {
-      background-color: black;
-      color: white;
-      padding: 9px 35px 9px 35px;
-      border-radius: 10px;
-      border-color: white;
-    }
-  }
 }
 
+.newsletter-content h1 {
+  text-shadow: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+}
 
+.newsletter-content button {
+  background-color: black;
+  color: white;
+  padding: 9px 35px 9px 35px;
+  border-radius: 10px;
+  border-color: white;
+}
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newsletter-bg {
     height: auto;
+    padding: 20px;
   }
 
-  .newsletter-container {
-    width: 90%;
+  .newsletter-text-container {
+    width: 100%;
+  }
+
+  .newsletter-content h1 {
+    font-size: 24px;
+  }
+
+  .newsletter-content button {
+    font-size: 16px;
+    padding: 6px 20px;
   }
 }
