@@ -39,6 +39,25 @@
 <body>
     <header>
 <!-- NAVBAR -->
+<!-- <div class="nav-title">
+    <h1>CH VENUE</h1>
+</div>
+<div class="nav-container">
+    <header class="sticky-banner">
+        <div class="container">
+            <div class="nav-header">
+                <nav role="navigation">
+                    <ul class="sf-menu">
+                        <li><a href="#tickets">Tickets</a></li>
+                        <li><a href="#plan">Plan Your Visits</a></li>
+                        <li><a href="#VIP">Become a VIP</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+</div> -->
 <div class="nav-title">
     <h1>CH VENUE</h1>
 </div>
@@ -59,12 +78,16 @@
     </header>
 </div>
 
+
+
 <!-- UPCOMING EVENTS -->
     <section>
             <div class="upcoming-events">
                 <h1>Upcoming Events</h1>
+                <div class="display-style"></div>
                 <i class="fa fa-bars"></i>
                 <i class="fa fa-th-large"></i>
+            </div>
                 </div>
                 <hr class="solid">
 
@@ -198,10 +221,20 @@
   <br>
     </section>
 <!-- GET DIRECTIONS -->
-    <section class="grid__right">
-        <h2>Get Directions</h2>
-        <p>This is the content of section 3.</p>
-    </section>
+<section class="grid__right">
+    <h2>Get Directions</h2>
+    <div id="map" style="height: 100%; width: 100%;"></div>
+    <script>
+        function initMap() {
+            let uluru = {lat: -25.344, lng: 131.036};
+            let map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 8, center: uluru}
+            );
+            let marker = new google.maps.Marker({position: uluru, map: map})
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJaEQovMviJDzrZXNXpetA1m3fF13RIoA&callback=initMap"></script>
+  </section>
 </div>
 </body>
 </html>

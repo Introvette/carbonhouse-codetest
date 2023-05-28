@@ -6,7 +6,12 @@
 
 .upcoming-events {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.display-style {
+
 }
 
 
@@ -14,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
     gap: 20px;
-    margin: 0 auto;
+    margin: 30px;
     max-width: 100%;
     text-align: center;
   }
