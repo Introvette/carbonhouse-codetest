@@ -77,21 +77,14 @@ button[type="submit"] {
   border-style: none;
 }
 
-@media (max-width: 768px) {
-  .search-form {
-    justify-content: center;
-    margin-bottom: 10px;
+@media(max-width: 991px){
+ .search-container {
+    display: none;
   }
-
-  .search-container {
-    width: 100%;
+  .login-form button {
+    display: none;
   }
-
-  .search-container input {
-    width: 100%;
-  }
-
-  .quick-container {
-    justify-content: center;
+  .social-media {
+    display: none;
   }
 }

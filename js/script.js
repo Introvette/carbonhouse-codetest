@@ -29,31 +29,11 @@ function showSlides(n) {
 }
 
 // dropdown menu
-
-class DropDown {
-  constructor() {
-    this.isMenuOpen = false;
-    this.dropdownToggle = document.querySelector('.dropdown-toggle');
-    this.dropdownMenu = document.querySelector('.dropdown-menu');
-
-    this.dropdownToggle.addEventListener('click', this.toggleMenu.bind(this));
-    document.addEventListener('click', this.closeMenu.bind(this));
-  }
-
-  toggleMenu(event) {
-    event.stopPropagation();
-    this.isMenuOpen = !this.isMenuOpen;
-    this.dropdownToggle.classList.toggle('active');
-    this.dropdownMenu.style.display = this.isMenuOpen ? 'block' : 'none';
-  }
-
-  closeMenu(event) {
-    if (!event.target.closest('.nav-header')) {
-      this.isMenuOpen = false;
-      this.dropdownToggle.classList.remove('active');
-      this.dropdownMenu.style.display = 'none';
-    }
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+      x.style.display = "none";
+  } else {
+      x.style.display = "block";
   }
 }
-
-new DropDown();
