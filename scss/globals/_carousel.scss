@@ -1,0 +1,15 @@
+
+.carousel-inner .carousel-item .col-sm-6 {
+  display: inline-block;
+  float: none;
+}
+
+.carousel-inner .carousel-item.active .col-sm-6 {
+  display: block;
+  float: left;
+}
+
+.carousel-inner .carousel-item-next .col-sm-6,
+.carousel-inner .carousel-item-prev .col-sm-6 {
+  display: block;
+}
