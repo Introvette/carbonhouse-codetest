@@ -1,15 +1,107 @@
-
-.carousel-inner .carousel-item .col-sm-6 {
-  display: inline-block;
-  float: none;
+.socials-main-handle {
+  font-size: 20px;
+  margin-top: 20px;
+  white-space: normal;
 }
 
-.carousel-inner .carousel-item.active .col-sm-6 {
-  display: block;
-  float: left;
+.card-body {
+  width: 100%;
+  white-space: normal;
+
 }
 
-.carousel-inner .carousel-item-next .col-sm-6,
-.carousel-inner .carousel-item-prev .col-sm-6 {
+.socials-main-handle {
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+}
+
+#home {
+  background-color: white;
+}
+
+.carousel-inner {
+  overflow-x: auto;
+  display: flex;
+  max-width: 600px;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.socials-card {
+  margin: 0 1px;
+  background-color: rgb(194, 194, 194);
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 0 0 .4rem black;
+  max-height: 100%;
+  width: 100%;
+  color: black;
+}
+
+
+.active .nav .nav-tabs {
+width: 100%;
+color: black;
+object-fit: fill;
+
+}
+
+.nav.nav-tabs li:not(.active) a {
+  color: black;
+  background-color: var(--theme-color);
+}
+
+.nav.nav-tabs li:not(.active) a:hover {
+  color: #000000;
+  background-color: #eee;
+}
+
+.nav.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  object-fit: fill;
+}
+
+.nav.nav-tabs li {
+  flex: 1;
+  background-color: white;
+}
+
+.nav.nav-tabs li a {
   display: block;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.socials-card-container {
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow-x: auto;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+
+}
+
+.card-heading {
+  margin-bottom: .5rem;
+}
+
+.carousel-box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0px 0px 0px 15px;
+  margin-bottom: -10px;
+  border-radius: 5px;
 }
