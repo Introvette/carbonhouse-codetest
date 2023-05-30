@@ -1,0 +1,36 @@
+.map-container {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 500px;
+  }
+
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .map-overlay-text {
+    font-size: 18px;
+    color: #333;
+  }
+
+  #map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: calc(100% - 50px);
+    z-index: 0;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+  }

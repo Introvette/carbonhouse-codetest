@@ -212,17 +212,16 @@
 <!-- GET DIRECTIONS -->
 <section class="grid__right">
     <h2>Get Directions</h2>
-    <div id="map" style="height: 100%; width: 100%;"></div>
-    <script>
-        function initMap() {
-            let uluru = {lat: -25.344, lng: 131.036};
-            let map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 8, center: uluru}
-            );
-            let marker = new google.maps.Marker({position: uluru, map: map})
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJaEQovMviJDzrZXNXpetA1m3fF13RIoA&callback=initMap"></script>
+    <p>Map Out Your Trip!</p>
+    <div class="map-container">
+        <div class="map-overlay">
+          <p class="map-overlay-text">Address: 1234 Sally May Lane, Charlotte, NC, 28269</p>
+        </p>
+        </div>
+        <div id="map"></div>
+      </div>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJaEQovMviJDzrZXNXpetA1m3fF13RIoA&callback=initMap"></script>
+
   </section>
 </div>
 </body>
