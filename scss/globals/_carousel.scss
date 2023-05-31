@@ -74,6 +74,7 @@ object-fit: fill;
 .nav.nav-tabs li {
   flex: 1;
   background-color: white;
+  font-family: 'Oswald', sans-serif;
 }
 
 .nav.nav-tabs li a {
@@ -97,12 +98,15 @@ object-fit: fill;
 .handle {
   color: var(--theme-color);
   font-size: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .socials-header {
   display: flex;
   font-size: 20px;
   gap: 5px;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
 }
 
 .card-heading {

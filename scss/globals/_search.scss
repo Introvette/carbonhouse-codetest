@@ -23,6 +23,7 @@
 ::placeholder {
   color: black;
   text-align: left;
+  font-family: 'Oswald', sans-serif;
 }
 
 .login-form {
@@ -66,6 +67,7 @@ button[type="submit"] {
 
 .social-media p {
   margin-top: -5px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .login-form button {
@@ -75,6 +77,7 @@ button[type="submit"] {
   justify-content: space-evenly;
   align-items: center;
   border-style: none;
+  font-family: 'Oswald', sans-serif;
 }
 
 @media(max-width: 991px){

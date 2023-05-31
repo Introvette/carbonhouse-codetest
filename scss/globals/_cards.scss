@@ -26,6 +26,7 @@
 
   .content {
     margin-bottom: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
   }
 
   .date-bar {
@@ -41,6 +42,8 @@
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 1px;
+    font-family: 'Oswald', sans-serif;
+
   }
 
   .day-bar-container {
@@ -60,6 +63,7 @@
     width: 40%;
     border-radius: 20px 0px 0px 70px;
     z-index: 1;
+    font-family: 'Oswald', sans-serif;
   }
 
   @media (max-width: 767px) {
@@ -92,11 +96,7 @@
 
   .upcoming-events h1 {
     margin: 20px 20px;
-  }
-
-  .solid {
-    margin: 20px 20px 20px 20px;
-    padding: 10px 10px 10px 10px;
+    font-family: 'Merriweather Sans', sans-serif;
   }
 
   .cards-container {

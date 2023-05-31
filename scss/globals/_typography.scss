@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans&family=Oswald&display=swap');
+
 h1, h2, h3 {
     font-weight: 700;
     line-height: 1.1;
     margin-top: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -10,4 +13,9 @@ p {
 
 a, a:visited, a:active {
     text-decoration: none;
+}
+
+.sub-heading {
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
