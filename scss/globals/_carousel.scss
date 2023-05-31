@@ -94,6 +94,17 @@ object-fit: fill;
 
 }
 
+.handle {
+  color: var(--theme-color);
+  font-size: 20px;
+}
+
+.socials-header {
+  display: flex;
+  font-size: 20px;
+  gap: 5px;
+}
+
 .card-heading {
   margin-bottom: .5rem;
 }
@@ -103,7 +114,6 @@ object-fit: fill;
   margin-bottom: -10px;
   border-radius: 5px;
   max-width: 900px;
-  height: 400px;
 }
 @media (max-width: 767px) {
 .carousel-box {
