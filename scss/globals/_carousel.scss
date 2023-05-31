@@ -102,7 +102,8 @@ object-fit: fill;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: -10px;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 900px;
+  height: 400px;
 }
 @media (max-width: 767px) {
 .carousel-box {
