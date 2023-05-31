@@ -3,6 +3,7 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: 500px;
+    max-width: 500px;
   }
 
   .map-overlay {
@@ -29,8 +30,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
     z-index: 0;
     margin-top: 30px;
     padding: 20px 20px 20px 20px;
+  }
+
+  @media (max-width: 767px) {
+    .map-container {
+      height: 300px;
+      max-width: 400px;
+    }
+
+    #map {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: calc(100% - 50px);
+      z-index: 0;
+      margin-top: 0;
+      padding: 0;
+    }
   }
