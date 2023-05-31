@@ -55,13 +55,14 @@
     margin-bottom: -80px;
     margin-top: -20px;
 
+
     h1 {
       color: white;
-      font-size: 40px;
+      font-size: 28px;
       margin: 0;
       padding: 10px;
       background-color: black;
-      width: 200px;
+      max-width: 260px;
       height: 100px;
       display: flex;
       align-items: center;
@@ -73,7 +74,7 @@
     display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 976px) {
 
     .mobile-container {
         display: block;
@@ -81,14 +82,10 @@
 }
 
 
-@media(max-width: 700px) {
+@media(max-width: 976px) {
 
   .nav-title h1 {
     display: none;
-  }
-
-  .nav-container {
-    // display: none;
   }
 
   body {
