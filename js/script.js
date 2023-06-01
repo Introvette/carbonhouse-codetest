@@ -124,52 +124,52 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
 
-const gridButton = document.getElementById('gridButton');
-const listButton = document.getElementById('listButton');
-const gridContainer = document.getElementById('gridContainer');
-const listContainer = document.getElementById('listContainer');
+// const gridButton = document.getElementById('gridButton');
+// const listButton = document.getElementById('listButton');
+// const gridContainer = document.getElementById('gridContainer');
+// const listContainer = document.getElementById('listContainer');
 
 
-gridButton.addEventListener('click', switchToGridView);
-listButton.addEventListener('click', switchToListView);
+// gridButton.addEventListener('click', switchToGridView);
+// listButton.addEventListener('click', switchToListView);
 
 
-function switchToGridView() {
-  gridContainer.classList.remove('hidden');
-  listContainer.classList.add('hidden');
-}
+// function switchToGridView() {
+//   gridContainer.classList.remove('hidden');
+//   listContainer.classList.add('hidden');
+// }
 
 
-function switchToListView() {
-  listContainer.classList.remove('hidden');
-  gridContainer.classList.add('hidden');
-}
+// function switchToListView() {
+//   listContainer.classList.remove('hidden');
+//   gridContainer.classList.add('hidden');
+// }
 
-function renderCards() {
-  listContainer.innerHTML = '';
+// function renderCards() {
+//   listContainer.innerHTML = '';
 
-  cardData.forEach((card) => {
-    const cardElement = document.createElement('div');
-    cardElement.classList.add('card');
+//   cardData.forEach((card) => {
+//     const cardElement = document.createElement('div');
+//     cardElement.classList.add('card');
 
-    cardElement.innerHTML = `
-      <div class="card-image">
-        <img src="${card.cardImage}">
-      </div>
-      <div class="card-content">
-        <div class="card-artist">${card.cardArtist}</div>
-        <div class="card-tour">${card.Tour}</div>
-        <div class="card-date">${card.cardDate}</div>
-        <div class="card-day">${card.cardDay}</div>
-      </div>
-    `;
+//     cardElement.innerHTML = `
+//       <div class="card-image">
+//         <img src="${card.cardImage}">
+//       </div>
+//       <div class="card-content">
+//         <div class="card-artist">${card.cardArtist}</div>
+//         <div class="card-tour">${card.Tour}</div>
+//         <div class="card-date">${card.cardDate}</div>
+//         <div class="card-day">${card.cardDay}</div>
+//       </div>
+//     `;
 
 
-    listContainer.appendChild(cardElement);
-  });
-}
+//     listContainer.appendChild(cardElement);
+//   });
+// }
 
-renderCards();
+// renderCards();
 
   postMethods();
 });
