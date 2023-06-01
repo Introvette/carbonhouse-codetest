@@ -40,7 +40,16 @@
   .map-container {
     height: auto;
     padding: 10px;
-    max-width: 80%;
+    max-width: 55%;
+  }
+
+  .map-overlay {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .map-overlay-text {
+    padding: 0;
+    margin-top: 10px;
   }
 
   #map {
