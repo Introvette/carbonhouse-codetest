@@ -21,17 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       cardHeading: "@ CHVENUE",
       cardBody: "Catch unforgettable music moments @ acllive and @3TENaustin in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! #ACLLIVE #3TENACLLIVE",
-      cardFooter: "hello"
+      cardFooter: "8:14 PM / 3 APR 2023"
     },
     {
       cardHeading: "@ CHVENUE",
       cardBody: "Tickets for @Thundercat's IOn Yo Girl's City Tour go on sale tomorrow/ 5/5 @ 10AM local time!! Get yours here",
-      cardFooter: "hello"
+      cardFooter: "7:35 PM / 2 APR 2023"
     },
     {
       cardHeading: "@ CHVENUE",
       cardBody: "Tickets for @Thundercat's IOn Yo Girl's City Tour go on sale tomorrow/ 5/5 @ 10AM local time!! Get yours here",
-      cardFooter: "hello"
+      cardFooter: "9:08 AM / 1 APR 2023"
     },
   ];
 
