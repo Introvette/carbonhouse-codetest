@@ -53,14 +53,75 @@ document.addEventListener("DOMContentLoaded", function () {
   postMethods();
 });
 
-const gridButton = document.getElementById('gridButton');
-const listButton = document.getElementById('listButton');
-const cardsContainer = document.querySelector('.cards');
+document.addEventListener("DOMContentLoaded", function () {
+  const cardData = [
+    {
+      cardImage: "assets/img/weeknd.jpeg",
+      cardArtist: "THE WEEKND",
+      Tour: "After Hours Tour",
+      cardDate: "JULY 28, 2023",
+      cardDay: "FRIDAY"
+    },
+    {
+      cardImage: "assets/img/bts.jpeg",
+      cardArtist: "BTS",
+      Tour: "Map Of The Soul Tour",
+      cardDate: "JULY 30, 2023",
+      cardDay: "SATURDAY"
+    },
+    {
+      cardImage: "assets/img/dua.jpg",
+      cardArtist: "DUA LIPA",
+      Tour: "Future Nostalgia Tour",
+      cardDate: "AUGUST 12, 2023",
+      cardDay: "SATURDAY"
+    },
+    {
+      cardImage: "assets/img/gaga.jpg",
+      cardArtist: "LADY GAGA",
+      Tour: "The Chromatica Ball",
+      cardDate: "AUGUST 18, 2023",
+      cardDay: "FRIDAY"
+    },
+    {
+      cardImage: "assets/img/harry.jpg",
+      cardArtist: "HARRY STYLES",
+      Tour: "Love On Tour",
+      cardDate: "AUGUST 29, 2023",
+      cardDay: "TUESDAY"
+    },
+    {
+      cardImage: "assets/img/swift.jpg",
+      cardArtist: "TAYLOR SWIFT",
+      Tour: "Eras Tour",
+      cardDate: "SEPTEMBER 01, 2023",
+      cardDay: "FRIDAY"
+    },
 
-gridButton.addEventListener('click', () => {
-  cardsContainer.classList.remove('list-view');
-});
+  ];
 
-listButton.addEventListener('click', () => {
-  cardsContainer.classList.add('list-view');
+  const postContainer = document.querySelector(".cards-container");
+
+  const postMethods = () => {
+    cardData.map((postData) => {
+      const postElement = document.createElement("div");
+      postElement.classList.add("card");
+      postElement.innerHTML = `
+      <img class="card-image" src="${postData.cardImage}" />
+      <div class="content">
+        <div class="day-bar-container">
+          <div class="day-bar"><p>${postData.cardDay}</p></div>
+        </div>
+        <div class="date-bar">
+          <p>${postData.cardDate}</p>
+        </div>
+        <h2 class="card-text">${postData.cardArtist}</h2>
+        <p class="card-text">${postData.Tour}</p>
+      </div>
+      `;
+      postContainer.appendChild(postElement);
+    });
+  };
+
+  postMethods();
 });
