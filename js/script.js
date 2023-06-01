@@ -19,16 +19,19 @@ function myFunction() {
 document.addEventListener("DOMContentLoaded", function () {
   const cardData = [
     {
-      heading: "@ CHVENUE",
-      body: "Catch unforgettable music moments @ acllive and @3TENaustin in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! #ACLLIVE #3TENACLLIVE",
+      cardHeading: "@ CHVENUE",
+      cardBody: "Catch unforgettable music moments @ acllive and @3TENaustin in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! #ACLLIVE #3TENACLLIVE",
+      cardFooter: "hello"
     },
     {
-      heading: "@ CHVENUE",
-      body: "Tickets for @Thundercat's IOn Yo Girl's City Tour go on sale tomorrow/ 5/5 @ 10AM local time!! Get yours here",
+      cardHeading: "@ CHVENUE",
+      cardBody: "Tickets for @Thundercat's IOn Yo Girl's City Tour go on sale tomorrow/ 5/5 @ 10AM local time!! Get yours here",
+      cardFooter: "hello"
     },
     {
-      heading: "@ CHVENUE",
-      body: "Tickets for blah blah blah blah blah blah blah blah blah blah blah I can't see the rest blah blah blah",
+      cardHeading: "@ CHVENUE",
+      cardBody: "Tickets for @Thundercat's IOn Yo Girl's City Tour go on sale tomorrow/ 5/5 @ 10AM local time!! Get yours here",
+      cardFooter: "hello"
     },
   ];
 
@@ -39,8 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const postElement = document.createElement("div");
       postElement.classList.add("socials-card");
       postElement.innerHTML = `
-        <p class="card-heading"><i class="fa fa-twitter"></i>${postData.heading}</p>
-        <p class="card-body">${postData.body}</p>
+        <p class="card-heading"><i class="fa fa-twitter"></i>${postData.cardHeading}</p>
+        <p class="card-body">${postData.cardBody}</p>
+        <p class="card-footer">${postData.cardFooter}</p>
       `;
       postContainer.appendChild(postElement);
     });

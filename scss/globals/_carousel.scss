@@ -9,10 +9,18 @@
   margin-top: 20px;
   white-space: normal;
 }
-
+.card-heading {
+  margin-bottom: .5rem;
+}
 .card-body {
   width: 100%;
   white-space: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.card-footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .socials-main-handle {
@@ -29,21 +37,27 @@
 .carousel-inner {
   overflow-x: auto;
   display: flex;
-  max-width: 600px;
-  max-height: 600px;
+  max-width: 700px;
+  max-height: 700px;
   -webkit-overflow-scrolling: touch;
 }
 
 .socials-card {
-  margin: 0 1px;
+  margin: 10px;
   background-color: rgb(194, 194, 194);
   border-radius: 5px;
-  padding: 2rem;
   box-shadow: 0 0 .4rem black;
   object-fit: fill;
   width: 100%;
   color: black;
-  max-height: 500px;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
 }
 
 
@@ -51,7 +65,6 @@
 width: 100%;
 color: black;
 object-fit: fill;
-
 }
 
 .nav.nav-tabs li:not(.active) a {
@@ -83,8 +96,8 @@ object-fit: fill;
 }
 
 .socials-card-container {
-  max-width: 900px;
-  max-height: 400px;
+  width: 100%;
+  height: 100%;
   margin-top: 20px;
   margin: auto;
   background: rgb(255, 255, 255);
@@ -92,7 +105,7 @@ object-fit: fill;
   display: flex;
   gap: 2rem;
   padding: 0;
-
+  background-color: black;
 }
 
 .handle {
@@ -109,15 +122,11 @@ object-fit: fill;
   padding: 10px;
 }
 
-.card-heading {
-  margin-bottom: .5rem;
-}
-
 .carousel-box {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: -10px;
   border-radius: 5px;
-  max-width: 900px;
+  max-width: 1000px;
 }
 @media (max-width: 767px) {
 .carousel-box {
