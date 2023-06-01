@@ -2,7 +2,7 @@
   position: relative;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height: 420px;
+  height: 370px;
   max-width: 750px;
 }
 
@@ -34,23 +34,22 @@
   height: 80%;
   z-index: 0;
   margin-top: 20px;
-
 }
 
 @media (max-width: 767px) {
   .map-container {
-    height: 300px;
-    max-width: 300px;
+    height: auto;
+    padding: 10px;
+    max-width: 100%;
   }
 
   #map {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
     width: 100%;
-    height: calc(100% - 50px);
-    z-index: 0;
-    margin-top: 0;
-    padding: 0;
+    height: 300px;
+    margin-top: 10px;
   }
 }
