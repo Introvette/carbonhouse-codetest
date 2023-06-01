@@ -1,6 +1,13 @@
 
+// display view
+.upcoming-events {
+  display: flex;
+  justify-content: space-around
+}
 
-
+.display-views i {
+  height: 50px;
+}
 
   .cards {
     display: grid;

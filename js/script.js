@@ -52,3 +52,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   postMethods();
 });
+
+const gridButton = document.getElementById('gridButton');
+const listButton = document.getElementById('listButton');
+const cardsContainer = document.querySelector('.cards');
+
+gridButton.addEventListener('click', () => {
+  cardsContainer.classList.remove('list-view');
+});
+
+listButton.addEventListener('click', () => {
+  cardsContainer.classList.add('list-view');
+});
