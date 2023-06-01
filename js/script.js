@@ -60,42 +60,48 @@ document.addEventListener("DOMContentLoaded", function () {
       cardArtist: "THE WEEKND",
       Tour: "After Hours Tour",
       cardDate: "JULY 28, 2023",
-      cardDay: "FRIDAY"
+      cardDay: "FRIDAY",
+      tickets: "BUY TICKETS"
     },
     {
       cardImage: "assets/img/bts.jpeg",
       cardArtist: "BTS",
       Tour: "Map Of The Soul Tour",
       cardDate: "JULY 30, 2023",
-      cardDay: "SATURDAY"
+      cardDay: "SATURDAY",
+      tickets: "BUY TICKETS"
     },
     {
       cardImage: "assets/img/dua.jpg",
       cardArtist: "DUA LIPA",
       Tour: "Future Nostalgia Tour",
       cardDate: "AUGUST 12, 2023",
-      cardDay: "SATURDAY"
+      cardDay: "SATURDAY",
+      tickets: "BUY TICKETS"
     },
     {
       cardImage: "assets/img/gaga.jpg",
       cardArtist: "LADY GAGA",
       Tour: "The Chromatica Ball",
       cardDate: "AUGUST 18, 2023",
-      cardDay: "FRIDAY"
+      cardDay: "FRIDAY",
+      tickets: "BUY TICKETS"
     },
     {
       cardImage: "assets/img/harry.jpg",
       cardArtist: "HARRY STYLES",
       Tour: "Love On Tour",
       cardDate: "AUGUST 29, 2023",
-      cardDay: "TUESDAY"
+      cardDay: "TUESDAY",
+      tickets: "BUY TICKETS"
     },
     {
       cardImage: "assets/img/swift.jpg",
       cardArtist: "TAYLOR SWIFT",
       Tour: "Eras Tour",
       cardDate: "SEPTEMBER 01, 2023",
-      cardDay: "FRIDAY"
+      cardDay: "FRIDAY",
+      tickets: "BUY TICKETS"
     },
 
   ];
@@ -117,59 +123,15 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <h2 class="card-text">${postData.cardArtist}</h2>
         <p class="card-text">${postData.Tour}</p>
-      </div>
+        <a class="tickets"><i class=fa fa-ticket></i>${postData.tickets}</a>
+      </p>
       `;
+      const ticketsElement = postElement.querySelector(".tickets");
+      ticketsElement.innerHTML = `<i class="fa fa-ticket"></i> ${postData.tickets}`;
+
       postContainer.appendChild(postElement);
     });
   };
-
-
-// const gridButton = document.getElementById('gridButton');
-// const listButton = document.getElementById('listButton');
-// const gridContainer = document.getElementById('gridContainer');
-// const listContainer = document.getElementById('listContainer');
-
-
-// gridButton.addEventListener('click', switchToGridView);
-// listButton.addEventListener('click', switchToListView);
-
-
-// function switchToGridView() {
-//   gridContainer.classList.remove('hidden');
-//   listContainer.classList.add('hidden');
-// }
-
-
-// function switchToListView() {
-//   listContainer.classList.remove('hidden');
-//   gridContainer.classList.add('hidden');
-// }
-
-// function renderCards() {
-//   listContainer.innerHTML = '';
-
-//   cardData.forEach((card) => {
-//     const cardElement = document.createElement('div');
-//     cardElement.classList.add('card');
-
-//     cardElement.innerHTML = `
-//       <div class="card-image">
-//         <img src="${card.cardImage}">
-//       </div>
-//       <div class="card-content">
-//         <div class="card-artist">${card.cardArtist}</div>
-//         <div class="card-tour">${card.Tour}</div>
-//         <div class="card-date">${card.cardDate}</div>
-//         <div class="card-day">${card.cardDay}</div>
-//       </div>
-//     `;
-
-
-//     listContainer.appendChild(cardElement);
-//   });
-// }
-
-// renderCards();
 
   postMethods();
 });
