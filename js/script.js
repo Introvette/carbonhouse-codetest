@@ -60,48 +60,42 @@ document.addEventListener("DOMContentLoaded", function () {
       cardArtist: "THE WEEKND",
       Tour: "After Hours Tour",
       cardDate: "JULY 28, 2023",
-      cardDay: "FRIDAY",
-      tickets: "BUY TICKETS"
+      cardDay: "FRIDAY"
     },
     {
       cardImage: "assets/img/bts.jpeg",
       cardArtist: "BTS",
       Tour: "Map Of The Soul Tour",
       cardDate: "JULY 30, 2023",
-      cardDay: "SATURDAY",
-      tickets: "BUY TICKETS"
+      cardDay: "SATURDAY"
     },
     {
       cardImage: "assets/img/dua.jpg",
       cardArtist: "DUA LIPA",
       Tour: "Future Nostalgia Tour",
       cardDate: "AUGUST 12, 2023",
-      cardDay: "SATURDAY",
-      tickets: "BUY TICKETS"
+      cardDay: "SATURDAY"
     },
     {
       cardImage: "assets/img/gaga.jpg",
       cardArtist: "LADY GAGA",
       Tour: "The Chromatica Ball",
       cardDate: "AUGUST 18, 2023",
-      cardDay: "FRIDAY",
-      tickets: "BUY TICKETS"
+      cardDay: "FRIDAY"
     },
     {
       cardImage: "assets/img/harry.jpg",
       cardArtist: "HARRY STYLES",
       Tour: "Love On Tour",
       cardDate: "AUGUST 29, 2023",
-      cardDay: "TUESDAY",
-      tickets: "BUY TICKETS"
+      cardDay: "TUESDAY"
     },
     {
       cardImage: "assets/img/swift.jpg",
       cardArtist: "TAYLOR SWIFT",
       Tour: "Eras Tour",
       cardDate: "SEPTEMBER 01, 2023",
-      cardDay: "FRIDAY",
-      tickets: "BUY TICKETS"
+      cardDay: "FRIDAY"
     },
 
   ];
@@ -126,8 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <a class="tickets"><i class=fa fa-ticket></i>${postData.tickets}</a>
       </p>
       `;
-      const ticketsElement = postElement.querySelector(".tickets");
-      ticketsElement.innerHTML = `<i class="fa fa-ticket"></i> ${postData.tickets}`;
+
 
       postContainer.appendChild(postElement);
     });
@@ -135,3 +128,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   postMethods();
 });
+
+// toggle list view
+function toggleView(view) {
+  var gridView = document.getElementById("grid-view");
+  var listView = document.getElementById("list-view");
+
+  if (view === 'list-view') {
+    gridView.style.display = 'none';
+    listView.style.display = 'block';
+  } else {
+    gridView.style.display = 'grid';
+    listView.style.display = 'none';
+  }
+}
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+window.onload = function() {
+  var defaultView = isMobileDevice() ? "list-view" : "grid-view";
+  toggleView(defaultView);
+
+  if (isMobileDevice()) {
+    var gridViewButton = document.getElementById("grid-view-button");
+    gridViewButton.style.display = 'none';
+  }
+};
