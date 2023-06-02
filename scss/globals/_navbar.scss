@@ -1,5 +1,3 @@
-
-
 .nav-container {
     background-color: black;
 
@@ -75,17 +73,12 @@
     display: none;
 }
 
-@media (max-width: 976px) {
-
-    .mobile-container {
-        display: block;
-        margin-top: -30px;
-    }
-}
-
 
 @media(max-width: 976px) {
-
+  .mobile-container {
+    display: block;
+    margin-top: -30px;
+}
   .nav-title h1 {
     display: none;
   }

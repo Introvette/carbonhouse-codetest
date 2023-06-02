@@ -276,7 +276,7 @@ ul .list-container {
   box-shadow: 0 0 .4rem black;
   width: 500px;
   color: black;
-  height: 250px;
+  max-height: 100%;
   gap: 5px;
   display: flex;
   flex-direction: column;
@@ -371,7 +371,7 @@ object-fit: fill;
 }
 
 .card-footer i {
-  padding: 5px;
+  padding: 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -415,5 +415,10 @@ object-fit: fill;
     color: white;
     font-size: 10px;
     padding: 6px;
+  }
+
+  .nav.nav-tabs li {
+    flex-basis: auto;
+    flex-grow: 1;
   }
 }

@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <h2 class="card-text">${postData.cardArtist}</h2>
         <p class="card-text">${postData.Tour}</p>
-        <a class="tickets"><i class=fa fa-ticket></i>${postData.tickets}</a>
+        <a class="tickets"><i class="fas fa-ticket-alt"></i>${postData.tickets}</a>
       </p>
       `;
 
@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
   postMethods();
 });
 
-// toggle list view
 function toggleView(view) {
   var gridView = document.getElementById("grid-view");
   var listView = document.getElementById("list-view");
