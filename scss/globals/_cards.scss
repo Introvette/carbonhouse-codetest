@@ -272,7 +272,7 @@ ul .list-container {
   margin: 10px;
   background-color: rgb(194, 194, 194);
   border-radius: 5px;
-  // padding: 4px;
+  font-family: 'Oswald', sans-serif;
   box-shadow: 0 0 .4rem black;
   width: 500px;
   color: black;
@@ -364,6 +364,7 @@ object-fit: fill;
   color: white;
   flex-wrap: nowrap;
   font-size: 12px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .card-footer p {
