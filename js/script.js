@@ -42,9 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const postElement = document.createElement("div");
       postElement.classList.add("socials-card");
       postElement.innerHTML = `
-        <p class="card-heading"><i class="fa fa-twitter"></i>${postData.cardHeading}</p>
+        <p class="card-heading"><i class="fab fa-twitter"></i>${postData.cardHeading}</p>
         <p class="card-body">${postData.cardBody}</p>
-        <p class="card-footer">${postData.cardFooter}</p>
+<p class="card-footer">${postData.cardFooter} <i class="fas fa-comment"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></p>
+
       `;
       postContainer.appendChild(postElement);
     });

@@ -236,17 +236,17 @@ ul .list-container {
 .card-heading {
   margin-bottom: .5rem;
 }
+
+.card-heading i {
+  margin-right: 5px;
+}
+
 .card-body {
   width: 100%;
   white-space: normal;
   font-size: 14px;
   line-height: 1.5;
 
-}
-.card-footer {
-  margin-top: auto;
-  background-color: black;
-  color: white;
 }
 
 .socials-main-handle {
@@ -272,10 +272,9 @@ ul .list-container {
   margin: 10px;
   background-color: rgb(194, 194, 194);
   border-radius: 5px;
-  padding: 4px;
+  // padding: 4px;
   box-shadow: 0 0 .4rem black;
-  object-fit: fill;
-  width: 100%;
+  width: 500px;
   color: black;
   height: 250px;
   gap: 5px;
@@ -286,6 +285,9 @@ ul .list-container {
   text-align: left;
 }
 
+.socials-card p {
+  padding: 4px 0px 4px 4px;
+}
 
 .active .nav .nav-tabs {
 width: 100%;
@@ -322,7 +324,7 @@ object-fit: fill;
 }
 
 .socials-card-container {
-  width: 100%;
+  width: 1000px;
   height: 100%;
   margin-top: 20px;
   margin: auto;
@@ -354,13 +356,30 @@ object-fit: fill;
   max-width: 600px;
 }
 
-/* Previous CSS rules */
+.card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  flex-wrap: nowrap;
+  font-size: 12px;
+}
+
+.card-footer p {
+  margin: 4px;
+}
+
+.card-footer i {
+  padding: 5px;
+}
 
 @media screen and (max-width: 768px) {
   .carousel-inner {
-    max-width: 100%;
+    width: 100%;
     max-height: unset;
     overflow-y: scroll;
+    white-space: nowrap;
   }
 
   .socials-card {
@@ -368,11 +387,21 @@ object-fit: fill;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 250px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .tab-content {
+    width: 100%;
   }
 
   .socials-card-container {
+    width: 100%;
+    display: flex;
     flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
   }
 
   .carousel-box {
@@ -387,6 +416,4 @@ object-fit: fill;
     font-size: 10px;
     padding: 6px;
   }
-
-
 }

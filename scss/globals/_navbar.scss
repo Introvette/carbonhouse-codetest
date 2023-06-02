@@ -30,6 +30,7 @@
             font-family: 'Oswald', sans-serif;
 
 
+
             li {
               margin: 0 10px;
               a {
@@ -47,28 +48,26 @@
     }
   }
 
-
   .nav-title {
     position: relative;
     display: flex;
     align-items: center;
     margin-left: 30px;
     margin-bottom: -80px;
-    margin-top: -20px;
-
 
     h1 {
       color: white;
       font-size: 60px;
       margin: 0;
-      padding: 10px;
-      background-color: black;
-      max-width: 260px;
+      padding: 20px;
+      background: linear-gradient(to right, #787878, #000000);
+      max-width: 300px;
       height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Oswald', sans-serif;
+      margin-left: 40px;
     }
   }
 
@@ -80,6 +79,7 @@
 
     .mobile-container {
         display: block;
+        margin-top: -30px;
     }
 }
 
